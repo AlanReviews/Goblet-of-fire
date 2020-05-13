@@ -2,6 +2,9 @@ I am creating an algorithm to select 3 candidates from the Goblet of Fire. Each 
 
 This program is not affiliated with JK Rowling and the Harry Potter series. It is created by a fan after reading Goblet of Fire.
 
+### Lore
+There are 3 schools, Hogwarts, Beauxbatons, and Durmstrang that compete for the Triwizard Cup.
+
 ### Steps
 1. Students put their names in the Goblet of Fire for the Triwizard Tournament. All students must be 17 years or older.
 Any underage student will not be allowed to partcipate in the Triwizard Tournament.
