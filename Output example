@@ -1,0 +1,21 @@
+Entering info:
+You are at the age line. Please enter your age:
+16
+You are underage. Please participate next time.
+You are at the age line. Please enter your age:"
+17
+Plesae enter your name:
+Cedric Diggory
+Please enter your school:
+Hogwarts
+
+WARNING: SPOILER ALERT
+
+Output example:
+Harry Potter, (40) from Hogwarts
+Cedric Diggory, (17) form Hogwarts
+Viktor Krum, (18) from Durmstrang
+Fleur Delacour, (20) from Durmstrang
+
+Notes
+Output does not need to look like this.
