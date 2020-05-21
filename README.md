@@ -7,7 +7,7 @@ Hogwarts, Beauxbatons, and Durmstrang compete for the Triwizard Cup. In order to
 
 ### Steps
 1. Students put their names in the Goblet of Fire for the Triwizard Tournament. All students must be 17 years or older.
-Any underage student will not be allowed to partcipate in the Triwizard Tournament.
+Any underage student will not be allowed to partcipate in the Triwizard Tournament. If a student is underage, the program goes back to the menu.
 2. The Goblet of fire will choose 3 students from different schools to participate in the Triwizard Tournament.
 3. Print out the chosen candidates.
 
