@@ -1,6 +1,6 @@
 #include "View.h"
 
-void View::showMenu(int& choice)
+void View::displayMenu(int& choice)
 {
   cout << "Welcome to the Goblet of Fire"<< endl;
   cout << "  1. Enter a participant:" << endl;
@@ -18,16 +18,3 @@ void View::showMenu(int& choice)
   }
 
 }
-
-void View::readInt(int& n)
-{
-  cin >> n;
-}
-
-void View::readStr(string& str)
-{
-  cin >> str;
-}
-
-
-
