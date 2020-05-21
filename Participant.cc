@@ -16,7 +16,20 @@ Participant::~Participant() {
     
 }
 
+string Participant::getName(void) const {
+    return name;
+}
+
+int Participant::getAge(void) const {
+    return age;
+}
+
+
+string Participant::getSchool(void) const {
+    return school;
+}
+
 // This is the display info function to display the information of a chosen candidate
 void Participant::displayInfo(void) {
-    cout << name << ", (" << age << ") from " << school << endl;
+    cout << getName() << ", (" << getAge() << ") from " << getSchool() << endl;
 }

@@ -1,21 +1,26 @@
 #ifndef PARTCIPANT_H_
 #define PARTICIPANT_H_
 
-#include <string.h>
+#include <string>
+using namespace std;
 #include <iostream>
 
-// This is the participant class. It represents a candidate to be chosen for the Triwizard Tournament
-// An example of a candidate is Cedric Diggory.
 class Participant {
     public:
         Participant();
         Participant(string n, int a, string s);
+        string getName(void) const;
+        int getAge(void) const;
+        string getSchool(void) const;
         ~Participant();
         void displayInfo(void);
+        
     
     private:
         string name;
         int age;
         string school;
 
-}
+};
+
+#endif PARTCIPANT_H_
