@@ -10,8 +10,3 @@ Hogwarts, Beauxbatons, and Durmstrang compete for the Triwizard Cup. In order to
 Any underage student will not be allowed to partcipate in the Triwizard Tournament. If a student is underage, the program goes back to the menu.
 2. The Goblet of fire will choose 3 students from different schools to participate in the Triwizard Tournament.
 3. Print out the chosen candidates.
-
-### Constraints
-1. Do not use structs.
-2. Follow software engineering principles.
-3. Statically allocate the objects.
