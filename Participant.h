@@ -23,4 +23,4 @@ class Participant {
 
 };
 
-#endif PARTCIPANT_H_
+#endif

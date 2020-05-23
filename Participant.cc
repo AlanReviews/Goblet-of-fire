@@ -5,10 +5,10 @@ Participant::Participant() {
 
 }
 // Participant copy constructor to destroy the participant object
-Participant::Participant(string n, int a, string h) {
+Participant::Participant(string n, int a, string s) {
     name = n;
     age = a;
-    school = h;
+    school = s;
     
 }
 // This is the destructor
