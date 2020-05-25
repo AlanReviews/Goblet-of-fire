@@ -11,6 +11,7 @@ class Control {
         Control();
         ~Control();
         void launch(void);
+        void drawParticipant(vector<Participant> candidates, string school);
     
     private:
         vector<Participant> beauxbatons;
