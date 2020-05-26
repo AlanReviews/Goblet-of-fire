@@ -15,3 +15,6 @@ Any underage student will not be allowed to partcipate in the Triwizard Tourname
 1. Download this file and unzip it
 2. Call make
 3. Call ./executable and enjoy
+
+### Read More
+[Goblet of Fire](https://harrypotter.fandom.com/wiki/Goblet_of_Fire)
