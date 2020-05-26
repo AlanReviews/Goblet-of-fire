@@ -4,6 +4,7 @@
 Participant::Participant() {
 
 }
+
 // Participant copy constructor to destroy the participant object
 Participant::Participant(string n, int a, string s) {
     name = n;
@@ -11,23 +12,16 @@ Participant::Participant(string n, int a, string s) {
     school = s;
     
 }
+
 // This is the destructor
 Participant::~Participant() {
     
 }
 
-string Participant::getName(void) const {
-    return name;
-}
-
-int Participant::getAge(void) const {
-    return age;
-}
-
-
-string Participant::getSchool(void) const {
-    return school;
-}
+// Getters for the name, age, and school
+string Participant::getName(void) const { return name; }
+int Participant::getAge(void) const { return age; }
+string Participant::getSchool(void) const { return school; }
 
 // This is the display info function to display the information of a chosen candidate
 void Participant::displayInfo(void) {

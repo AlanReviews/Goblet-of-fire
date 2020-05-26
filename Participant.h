@@ -5,6 +5,7 @@
 using namespace std;
 #include <iostream>
 
+// This is a participant object. It is an entity object. It represent a student at a school in the Harry Potter universe.
 class Participant {
     public:
         Participant();

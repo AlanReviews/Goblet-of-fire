@@ -6,6 +6,7 @@
 
 #include <vector>
 
+// This is a control object which controls the user interface and the program
 class Control {
     public:
         Control();
@@ -14,9 +15,7 @@ class Control {
         void drawParticipant(vector<Participant> candidates, string school);
     
     private:
-        vector<Participant> beauxbatons;
-        vector<Participant> durmstrang;
-        vector<Participant> hogwarts;
+        vector<Participant> participants;
 
 };
 
