@@ -16,5 +16,8 @@ Any underage student will not be allowed to partcipate in the Triwizard Tourname
 2. Call make
 3. Call ./executable and enjoy
 
+## Compilation Notes
+Tested on an Ubuntu 18.04 enviroment. It will probably work on xUbuntu.
+
 ### Read More
 [Goblet of Fire](https://harrypotter.fandom.com/wiki/Goblet_of_Fire)
