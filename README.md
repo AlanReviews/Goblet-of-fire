@@ -16,7 +16,7 @@ Any underage student will not be allowed to partcipate in the Triwizard Tourname
 2. Call make
 3. Call ./executable and enjoy
 
-## Compilation Notes
+#### Compilation Notes
 Tested on an Ubuntu 18.04 enviroment. It will probably work on xUbuntu.
 
 ### Read More
