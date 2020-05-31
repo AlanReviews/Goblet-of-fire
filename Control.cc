@@ -6,6 +6,7 @@
 #include <time.h>       /* time */
 #include <limits>
 
+
 // Constructor for the Control object
 Control::Control() {
 
@@ -34,9 +35,9 @@ void Control::launch(void) {
     // Declare and initialize the choice
     int choice;
     // Declare and initialize the student attributes
-    char name[100] = {};
+    std::string name;
     int age;
-    string school;
+    std::string school;
     // Statically allocate a participant vecotr
     vector<Participant> participants;
     // Declare and initialize has a school booleans
@@ -65,10 +66,19 @@ void Control::launch(void) {
             }
             // Prompt the user to add a name and school
             cout << "Please enter your name:" << endl;
-            cin.getline(name, sizeof(name));
+            std::getline(std::cin,name);
+            if (name.empty()) {
+                cout << "You didn't enter a name" << endl;
+                continue;
+            }
             cout << endl;
             cout << "Please enter your school:" << endl;
-            cin >> school;
+            std::getline(std::cin,school);
+            if (school.empty()) {
+                cout << "You didn't enter a school" << endl;
+                continue;
+            }
+            cout << endl;
             // If there is a Hogwarts, Beauxbatons, or Durmstrang student added to the list, match the appropriate boolean variable to true
             if (school == "Hogwarts") {
                 hasHogwarts = true;
@@ -94,6 +104,9 @@ void Control::launch(void) {
             drawParticipant(participants, "Durmstrang");
             // Mentioning Harry Potter
             // cout << "Harry Potter, (14) from Hogwarts" << endl;
+        }
+        else if (choice == 2) {
+            cout << "Not enough participants" << endl;
         }
     }
 }

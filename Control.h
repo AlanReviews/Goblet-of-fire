@@ -5,6 +5,8 @@
 #include "View.h"
 
 #include <vector>
+#include <string>
+using namespace std;
 
 // This is a control object which controls the user interface and the program
 class Control {
