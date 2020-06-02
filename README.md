@@ -1,7 +1,6 @@
 I am creating an algorithm to select 3 candidates from the Goblet of Fire. Each candidate has an name, age, and school. Every candidate must be at at least 17 years of age in order to participate in the Triwizard tournament.
 
-This program is not affiliated with JK Rowling and the Harry Potter series. It is created by a fan after reading Goblet of Fire.
-
+This program is not affiliated with JK Rowling and the Harry Potter series. It is created by a fan.
 ### Lore
 Hogwarts, Beauxbatons, and Durmstrang compete for the Triwizard Cup. In order to compete for the Triwizard Cup, each school needs an older student to represent their school.
 
