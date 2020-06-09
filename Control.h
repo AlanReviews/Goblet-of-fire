@@ -17,7 +17,7 @@ class Control {
         void drawParticipant(vector<Participant> candidates, string school);
     
     private:
-        vector<Participant> participants;
+        vector<Participant*> participants;
 
 };
 

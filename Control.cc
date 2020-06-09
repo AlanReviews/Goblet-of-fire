@@ -14,7 +14,6 @@ Control::Control() {
 
 // Destructor for the control object
 Control::~Control() {
-    
 }
 
 // Draw a participant from a selected school
@@ -38,6 +37,7 @@ void Control::launch(void) {
     std::string name;
     int age;
     std::string school;
+    std::string num;
     // Statically allocate a participant vecotr
     vector<Participant> participants;
     // Declare and initialize has a school booleans
@@ -71,7 +71,6 @@ void Control::launch(void) {
                 cout << "You didn't enter a name" << endl;
                 continue;
             }
-            cout << endl;
             cout << "Please enter your school:" << endl;
             std::getline(std::cin,school);
             if (school.empty()) {
@@ -89,10 +88,10 @@ void Control::launch(void) {
             else if (school == "Durmstrang") {
                 hasDurmstrang = true;
             }
-            // Statically allocate a participant object
-            Participant p = Participant(name, age, school);
+            // Dynamically allocate a participant object
+            Participant* p = new Participant(name, age, school);
             // Add the participant object to the vector
-            participants.push_back(p);
+            participants.push_back(*p);
         }
         // Drawing out characters
         else if (choice == 2 && participants.size() >= 3 && (hasHogwarts && hasBeauxbatons && hasDurmstrang))  {
@@ -108,5 +107,5 @@ void Control::launch(void) {
         else if (choice == 2) {
             cout << "Not enough participants" << endl;
         }
-    }
+    } // while(1)
 }
