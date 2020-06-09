@@ -64,6 +64,7 @@ void Control::launch(void) {
                 cout << "You are not allowed to participate in the Triwizard Tournament. Even if you look older or are under the aging potion, you are still not allowed." << endl;
                 continue;
             }
+            cout << endl;
             // Prompt the user to add a name and school
             cout << "Please enter your name:" << endl;
             std::getline(std::cin,name);
