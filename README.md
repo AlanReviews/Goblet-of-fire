@@ -27,7 +27,7 @@ Any underage student will not be allowed to partcipate in the Triwizard Tourname
 ### Compilation
 1. Download this file and unzip it
 2. Call make
-3. Call ./executable and enjoy
+3. Call valgrind --leak-check=full ./executable and enjoy
 
 #### Compilation Notes
 Tested on an Ubuntu 18.04 enviroment. It will probably work on xUbuntu. The code works with C++98 and C++11 syntax.
