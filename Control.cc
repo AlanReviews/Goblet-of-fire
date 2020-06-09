@@ -108,5 +108,5 @@ void Control::launch(void) {
         else if (choice == 2) {
             cout << "Not enough participants" << endl;
         }
-    }
-}
+    } // while(1)
+} // void Control::launch(void) {
