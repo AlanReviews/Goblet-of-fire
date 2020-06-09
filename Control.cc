@@ -14,6 +14,9 @@ Control::Control() {
 
 // Destructor for the control object
 Control::~Control() {
+    for (int i = 0; i < participants.size(); i++) {
+        delete &(participants[i]);
+    }
 }
 
 // Draw a participant from a selected school
@@ -108,4 +111,5 @@ void Control::launch(void) {
             cout << "Not enough participants" << endl;
         }
     } // while(1)
-}
+    
+} // void Control::launch(void) {
