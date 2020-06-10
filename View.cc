@@ -4,7 +4,7 @@
 void View::displayMenu(int& choice)
 {
   cout << "Welcome to the Goblet of Fire"<< endl;
-  cout << "Remember, when you enter your name, you must participate in the Triwizard Torunament" << endl;
+  cout << "Remember, when you enter your name, you must participate in the Triwizard Tournament otherwise your magic will be gone" << endl;
   cout << "  1. Enter a participant:" << endl;
   cout << "  2. Draw out:" << endl;
   cout << "  0. Exit" << endl<<endl;

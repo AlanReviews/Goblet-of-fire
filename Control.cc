@@ -1,9 +1,9 @@
 #include "Control.h"
 #include "View.h"
 
-#include <stdio.h>      /* printf, scanf, puts, NULL */
-#include <stdlib.h>     /* srand, rand */
-#include <time.h>       /* time */
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 #include <limits>
 
 
@@ -30,16 +30,14 @@ void Control::drawParticipant(vector<Participant> candidates, string school) {
 void Control::launch(void) {
     // Initialize the random seed
     srand( (unsigned)time( NULL ) );
-    // View object
+    // Create a View object
     View view;
     // Declare and initialize the choice
     int choice;
-    // Declare and initialize the student attributes
+    // Declare and initialize the student attributes: name, age, and school
     std::string name;
     int age;
     std::string school;
-    // Statically allocate a participant vecotr
-    vector<Participant> participants;
     // Declare and initialize has a school booleans
     bool hasHogwarts = false;
     bool hasDurmstrang = false;
