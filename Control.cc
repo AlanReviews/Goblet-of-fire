@@ -1,9 +1,9 @@
 #include "Control.h"
 #include "View.h"
 
-#include <stdio.h>      /* printf, scanf, puts, NULL */
-#include <stdlib.h>     /* srand, rand */
-#include <time.h>       /* time */
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 #include <limits>
 
 
@@ -15,34 +15,32 @@ Control::Control() {
 // Destructor for the control object
 Control::~Control() {
     for (int i = 0; i < participants.size(); i++) {
-        delete &(participants[i]);
+        delete participants[i];
     }
+    
 }
 
 // Draw a participant from a selected school
-void Control::drawParticipant(vector<Participant> candidates, string school) {
+void Control::drawParticipant(vector<Participant*> candidates, string school) {
     int candidateNum = rand() % candidates.size();
-    while (candidates[candidateNum].getSchool() != school) {
+    while (candidates[candidateNum]->getSchool() != school) {
         candidateNum = rand() % candidates.size();
     }
-    candidates[candidateNum].displayInfo();
+    candidates[candidateNum]->displayInfo();
 }
 
 // Launch the user interface
 void Control::launch(void) {
     // Initialize the random seed
     srand( (unsigned)time( NULL ) );
-    // View object
+    // Create a View object
     View view;
     // Declare and initialize the choice
     int choice;
-    // Declare and initialize the student attributes
+    // Declare and initialize the student attributes: name, age, and school
     std::string name;
     int age;
     std::string school;
-    std::string num;
-    // Statically allocate a participant vecotr
-    vector<Participant> participants;
     // Declare and initialize has a school booleans
     bool hasHogwarts = false;
     bool hasDurmstrang = false;
@@ -67,6 +65,7 @@ void Control::launch(void) {
                 cout << "You are not allowed to participate in the Triwizard Tournament. Even if you look older or are under the aging potion, you are still not allowed." << endl;
                 continue;
             }
+            cout << endl;
             // Prompt the user to add a name and school
             cout << "Please enter your name:" << endl;
             std::getline(std::cin,name);
@@ -74,6 +73,7 @@ void Control::launch(void) {
                 cout << "You didn't enter a name" << endl;
                 continue;
             }
+            cout << endl;
             cout << "Please enter your school:" << endl;
             std::getline(std::cin,school);
             if (school.empty()) {
@@ -91,10 +91,10 @@ void Control::launch(void) {
             else if (school == "Durmstrang") {
                 hasDurmstrang = true;
             }
-            // Dynamically allocate a participant object
+            // Statically allocate a participant object
             Participant* p = new Participant(name, age, school);
             // Add the participant object to the vector
-            participants.push_back(*p);
+            participants.push_back(p);
         }
         // Drawing out characters
         else if (choice == 2 && participants.size() >= 3 && (hasHogwarts && hasBeauxbatons && hasDurmstrang))  {
@@ -111,5 +111,4 @@ void Control::launch(void) {
             cout << "Not enough participants" << endl;
         }
     } // while(1)
-    
 } // void Control::launch(void) {

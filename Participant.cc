@@ -5,7 +5,7 @@ Participant::Participant() {
 
 }
 
-// Participant copy constructor to destroy the participant object
+// Participant copy constructor to create the participant object
 Participant::Participant(string n, int a, string s) {
     name = n;
     age = a;
@@ -13,7 +13,7 @@ Participant::Participant(string n, int a, string s) {
     
 }
 
-// This is the destructor
+// This is the destructor to destroy the participant object
 Participant::~Participant() {
     
 }

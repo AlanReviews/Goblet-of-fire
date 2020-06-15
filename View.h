@@ -5,7 +5,7 @@
 #include <string>
 using namespace std;
 
-// THhis is the view class. It displays the main menu
+// This is the view class. It displays the main menu
 class View
 {
   public:

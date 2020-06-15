@@ -10,10 +10,10 @@ class Participant {
     public:
         Participant();
         Participant(string n, int a, string s);
+        ~Participant();
         string getName(void) const;
         int getAge(void) const;
         string getSchool(void) const;
-        ~Participant();
         void displayInfo(void);
         
     
