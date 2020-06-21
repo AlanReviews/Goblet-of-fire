@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Equations of the Goblet Of Fire}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\par
+First of all, assume the Goblet of Fire picks student names randomly. \newline
+Let B represent the number of Beauxbatons students who placed their name in the Goblet of Fire. \newline
+Let D represent the number of Durmstrang students who placed their name in the Goblet of Fire. \newline
+Let H represent the number of Hogwarts students who placed their name in the Goblet of Fire. \newline
+\newline
+\mbox{The probability for a selection in any order is: }
+$$\frac{1}{B} \times \frac{1}{D} \times \frac{1}{H}$$
+
+The probability of finding picking a specific student is
+$$\frac{1}{D + B + H}$$
+\newline
+The minimum is
+\( \frac{1}{3} \)
+
+Note that there must be at least 1 Beauxbatons student, 1 Durmstrang student, and 1 Hogwarts student who entered their name in the Goblet of Fire. As a result,
+$$\frac{1}{1 + 1 + 1} = \frac{1}{3}$$
+
+\end{document}
