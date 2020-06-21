@@ -30,7 +30,7 @@ Any underage student will not be allowed to partcipate in the Triwizard Tourname
 3. Call ./executable and enjoy
 
 #### Compilation Notes
-Tested on an Ubuntu 18.04 enviroment. It will probably work on xUbuntu. The code works with C++98 and C++11 syntax.
+Tested on an Ubuntu 18.04 enviroment. The code works with C++98 and C++11 syntax.
 
 ### Read More
 [Goblet of Fire](https://harrypotter.fandom.com/wiki/Goblet_of_Fire)
