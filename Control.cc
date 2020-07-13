@@ -91,7 +91,7 @@ void Control::launch(void) {
             else if (school == "Durmstrang") {
                 hasDurmstrang = true;
             }
-            // Statically allocate a participant object
+            // Dynamically allocate a participant object
             Participant* p = new Participant(name, age, school);
             // Add the participant object to the vector
             participants.push_back(p);
